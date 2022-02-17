@@ -14,9 +14,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-        <mybatis-starter.version>1.3.1</mybatis-starter.version>
+        <cola.components.version>4.2.0-SNAPSHOT</cola.components.version>
+
         <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
-        <cola.components.version>4.1.0-SNAPSHOT</cola.components.version>
+        <mybatis-starter.version>1.3.1</mybatis-starter.version>
     </properties>
 
     <modules>
@@ -29,7 +30,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <!--cola components-->
+            <!--COLA components-->
             <dependency>
                 <groupId>com.alibaba.cola</groupId>
                 <artifactId>cola-component-dto</artifactId>
@@ -50,7 +51,7 @@
                 <artifactId>cola-component-catchlog-starter</artifactId>
                 <version>${cola.components.version}</version>
             </dependency>
-            <!--cola components Ended-->
+            <!--COLA components End-->
             <!--Project modules-->
             <dependency>
                 <groupId>${groupId}</groupId>
@@ -118,7 +119,7 @@
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
-                <version>1.18.16</version>
+                <version>1.18.22</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
@@ -128,12 +129,12 @@
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>fastjson</artifactId>
-                <version>1.2.70</version>
+                <version>1.2.79</version>
             </dependency>
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.13.1</version>
+                <version>4.13.2</version>
                 <scope>test</scope>
             </dependency>
             <!-- Misc End -->
@@ -156,7 +157,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>3.9.0</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>
